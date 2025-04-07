@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LungAI - Lung Condition Detection</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>About Lung AI</h2>
+      <p>
+        Lung AI analyzes lung images to classify conditions like pneumonia, nodules, and fibrosis, providing detailed analysis for hospitals, clinics, and healthcare providers.
+      </p>
+      <h3>Chat Controls</h3>
+      <button>➕ New Chat</button>
+      <button>☰ Clear All</button>
+    </aside>
+    <main class="main">
+      <header class="header">
+        <h1>Lung AI</h1>
+        <p>Advanced Lung Analysis System</p>
+      </header>
+      <section class="upload-box">
+        <h2>📤 Upload Lung Image</h2>
+        <label for="lung-upload">+ Click to Upload Lung Image</label>
+        <input type="file" id="lung-upload" accept="image/*" />
+      </section>
+      <section class="info">
+        <p>Upload a lung image to get an AI-powered analysis of potential conditions.</p>
+        <ul>
+          <li><strong>Pneumonia (HIGH RISK)</strong> – <span class="red">Detected</span></li>
+          <li><strong>Nodules (MODERATE RISK)</strong> – <span class="orange">Detected</span></li>
+          <li><strong>Normal (LOW RISK)</strong> – <span class="green">Not Detected</span></li>
+        </ul>
+      </section>
+      <div class="chatbox">
+        <input type="text" placeholder="Ask a question about lung conditions..." />
+        <button>&#10148;</button>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
